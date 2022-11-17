@@ -93,7 +93,7 @@ def DrawInputsWidgets():
     col1, col2, col3, col4 = st.beta_columns(4)
     col5, col6, col7, col8 = st.beta_columns(4)
 
-    # We are using these features to feed the ML pipeline - values copied from check_variables_for_UI() result
+    # We are using these features to feed the ML pipeline - {'PhoneService', 'OnlineBackup', 'PaymentMethod', 'MonthlyCharges', 'Contract', 'InternetService'}
 
     # create an empty DataFrame, which will be the live data
     X_live = pd.DataFrame([], index=[0])
